@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Exercise 1 - Basic JavaScript Programs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Practice Exercise 1</h1>
+
+  <!-- 1. MDAS Calculator -->
+  <div class="box">
+    <h2>1. MDAS Calculator</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="mdasCalculator()">Calculate</button>
+    <p id="mdasResult"></p>
+  </div>
+
+  <!-- 2. Age Calculator -->
+  <div class="box">
+    <h2>2. Age Calculator</h2>
+    <input type="number" id="birthYear" placeholder="Birth year">
+    <button onclick="ageCalculator()">Calculate</button>
+    <p id="ageResult"></p>
+  </div>
+
+  <!-- 3. Circumference -->
+  <div class="box">
+    <h2>3. Circumference of a Circle</h2>
+    <input type="number" id="radius" placeholder="Radius">
+    <button onclick="circleCircumference()">Calculate</button>
+    <p id="circleResult"></p>
+  </div>
+
+  <!-- 4. Celsius to Fahrenheit -->
+  <div class="box">
+    <h2>4. Celsius to Fahrenheit</h2>
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="celsiusToFahrenheit()">Convert</button>
+    <p id="tempResult"></p>
+  </div>
+
+  <!-- 5. Grade Scheme -->
+  <div class="box">
+    <h2>5. Grade Scheme</h2>
+    <input type="number" id="grade" placeholder="Numerical grade">
+    <button onclick="checkGrade()">Get Letter Grade</button>
+    <p id="gradeResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
