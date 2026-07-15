@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Practice Exercise 1 - Basic JavaScript Programs</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Exercise 1 — Basic JavaScript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Practice Exercise 1</h1>
+<header class="page-header">
+  <p class="eyebrow">JS-101 / practice exercise 1</p>
+  <h1>Basic JavaScript Programs</h1>
+  <p class="subtitle">Five small programs. Enter a value, run it, check the console.</p>
+</header>
 
-  <!-- 1. MDAS Calculator -->
-  <div class="box">
-    <h2>1. MDAS Calculator</h2>
-    <input type="number" id="num1" placeholder="First number">
-    <input type="number" id="num2" placeholder="Second number">
-    <button onclick="mdasCalculator()">Calculate</button>
-    <p id="mdasResult"></p>
-  </div>
+<main class="exercise-list">
 
-  <!-- 2. Age Calculator -->
-  <div class="box">
-    <h2>2. Age Calculator</h2>
-    <input type="number" id="birthYear" placeholder="Birth year">
-    <button onclick="ageCalculator()">Calculate</button>
-    <p id="ageResult"></p>
-  </div>
+  <section class="exercise" id="ex01">
+    <div class="exercise-head">
+      <span class="index">01</span>
+      <h2>MDAS Calculator</h2>
+    </div>
+    <p class="desc">Addition, subtraction, multiplication, division, modulus.</p>
+    <div class="controls">
+      <input type="number" id="num1" placeholder="first number">
+      <input type="number" id="num2" placeholder="second number">
+      <button onclick="mdasCalculator()">Run</button>
+    </div>
+    <pre class="output" id="mdasResult">&gt; awaiting input</pre>
+  </section>
 
-  <!-- 3. Circumference -->
-  <div class="box">
-    <h2>3. Circumference of a Circle</h2>
-    <input type="number" id="radius" placeholder="Radius">
-    <button onclick="circleCircumference()">Calculate</button>
-    <p id="circleResult"></p>
-  </div>
+  <section class="exercise" id="ex02">
+    <div class="exercise-head">
+      <span class="index">02</span>
+      <h2>Age Calculator</h2>
+    </div>
+    <p class="desc">Current age and age ten years from now, from a birth year.</p>
+    <div class="controls">
+      <input type="number" id="birthYear" placeholder="birth year">
+      <button onclick="ageCalculator()">Run</button>
+    </div>
+    <pre class="output" id="ageResult">&gt; awaiting input</pre>
+  </section>
 
-  <!-- 4. Celsius to Fahrenheit -->
-  <div class="box">
-    <h2>4. Celsius to Fahrenheit</h2>
-    <input type="number" id="celsius" placeholder="Celsius">
-    <button onclick="celsiusToFahrenheit()">Convert</button>
-    <p id="tempResult"></p>
-  </div>
+  <section class="exercise" id="ex03">
+    <div class="exercise-head">
+      <span class="index">03</span>
+      <h2>Circumference of a Circle</h2>
+    </div>
+    <p class="desc">2 × π × radius.</p>
+    <div class="controls">
+      <input type="number" id="radius" placeholder="radius">
+      <button onclick="circleCircumference()">Run</button>
+    </div>
+    <pre class="output" id="circleResult">&gt; awaiting input</pre>
+  </section>
 
-  <!-- 5. Grade Scheme -->
-  <div class="box">
-    <h2>5. Grade Scheme</h2>
-    <input type="number" id="grade" placeholder="Numerical grade">
-    <button onclick="checkGrade()">Get Letter Grade</button>
-    <p id="gradeResult"></p>
-  </div>
+  <section class="exercise" id="ex04">
+    <div class="exercise-head">
+      <span class="index">04</span>
+      <h2>Celsius → Fahrenheit</h2>
+    </div>
+    <p class="desc">(Celsius × 9/5) + 32.</p>
+    <div class="controls">
+      <input type="number" id="celsius" placeholder="celsius">
+      <button onclick="celsiusToFahrenheit()">Run</button>
+    </div>
+    <pre class="output" id="tempResult">&gt; awaiting input</pre>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="exercise" id="ex05">
+    <div class="exercise-head">
+      <span class="index">05</span>
+      <h2>Grade Scheme</h2>
+    </div>
+    <p class="desc">Numerical grade → letter grade (A–F).</p>
+    <div class="controls">
+      <input type="number" id="grade" placeholder="grade (0–100)">
+      <button onclick="checkGrade()">Run</button>
+    </div>
+    <pre class="output" id="gradeResult">&gt; awaiting input</pre>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <p>console output mirrors here — open devtools for the real thing</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
