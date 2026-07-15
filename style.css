@@ -251,6 +251,19 @@ input:focus {
   box-shadow: 0 0 0 3px var(--glow);
 }
 
+/* Remove the ugly native number spinner (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove it in Firefox too */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 button {
   position: relative;
   background: linear-gradient(135deg, var(--accent), var(--accent-deep));
