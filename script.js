@@ -1,4 +1,3 @@
-// Tracks which exercises have been run, to drive the progress rail
 const completed = new Set();
 
 function markDone(exerciseId) {
@@ -14,7 +13,6 @@ function updateProgress() {
   document.getElementById("progressFill").style.width = `${(done / total) * 100}%`;
 }
 
-// Helper: writes to the on-page output box and marks it as filled
 function setOutput(id, text) {
   let el = document.getElementById(id);
   el.textContent = "> " + text.replaceAll("\n", "\n> ");
