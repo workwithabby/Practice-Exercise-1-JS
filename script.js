@@ -1,3 +1,26 @@
+// Tracks which exercises have been run, to drive the progress rail
+const completed = new Set();
+
+function markDone(exerciseId) {
+  completed.add(exerciseId);
+  document.getElementById(exerciseId).classList.add("done");
+  updateProgress();
+}
+
+function updateProgress() {
+  const total = 5;
+  const done = completed.size;
+  document.getElementById("progressCount").textContent = `${done} / ${total}`;
+  document.getElementById("progressFill").style.width = `${(done / total) * 100}%`;
+}
+
+// Helper: writes to the on-page output box and marks it as filled
+function setOutput(id, text) {
+  let el = document.getElementById(id);
+  el.textContent = "> " + text.replaceAll("\n", "\n> ");
+  el.classList.add("filled");
+}
+
 // 1. MDAS Calculator
 function mdasCalculator() {
   let a = Number(document.getElementById("num1").value);
@@ -13,6 +36,7 @@ function mdasCalculator() {
 
   setOutput("mdasResult",
     `Sum: ${add}\nDifference: ${sub}\nProduct: ${mul}\nQuotient: ${div}\nRemainder: ${mod}`);
+  markDone("ex01");
 }
 
 // 2. Age Calculator
@@ -25,6 +49,7 @@ function ageCalculator() {
   console.log("Age now: " + age, "Age in 10 years: " + ageIn10);
 
   setOutput("ageResult", `Age now: ${age}\nAge in 10 years: ${ageIn10}`);
+  markDone("ex02");
 }
 
 // 3. Circumference of a Circle
@@ -35,6 +60,7 @@ function circleCircumference() {
   console.log("Circumference: " + circumference.toFixed(2));
 
   setOutput("circleResult", `Circumference: ${circumference.toFixed(2)}`);
+  markDone("ex03");
 }
 
 // 4. Celsius to Fahrenheit
@@ -45,6 +71,7 @@ function celsiusToFahrenheit() {
   console.log(celsius + "C = " + fahrenheit + "F");
 
   setOutput("tempResult", `${celsius}°C = ${fahrenheit}°F`);
+  markDone("ex04");
 }
 
 // 5. Grade Scheme
@@ -63,11 +90,5 @@ function checkGrade() {
   console.log("Letter Grade: " + result);
 
   setOutput("gradeResult", `Letter Grade: ${result}`);
-}
-
-// Helper: writes to the on-page output box and marks it as filled
-function setOutput(id, text) {
-  let el = document.getElementById(id);
-  el.textContent = "> " + text.replaceAll("\n", "\n> ");
-  el.classList.add("filled");
+  markDone("ex05");
 }
