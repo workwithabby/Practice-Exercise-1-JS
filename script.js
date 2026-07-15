@@ -11,8 +11,8 @@ function mdasCalculator() {
 
   console.log("Sum: " + add, "Difference: " + sub, "Product: " + mul, "Quotient: " + div, "Remainder: " + mod);
 
-  document.getElementById("mdasResult").innerText =
-    `Sum: ${add}\nDifference: ${sub}\nProduct: ${mul}\nQuotient: ${div}\nRemainder: ${mod}`;
+  setOutput("mdasResult",
+    `Sum: ${add}\nDifference: ${sub}\nProduct: ${mul}\nQuotient: ${div}\nRemainder: ${mod}`);
 }
 
 // 2. Age Calculator
@@ -24,8 +24,7 @@ function ageCalculator() {
 
   console.log("Age now: " + age, "Age in 10 years: " + ageIn10);
 
-  document.getElementById("ageResult").innerText =
-    `Age now: ${age}\nAge in 10 years: ${ageIn10}`;
+  setOutput("ageResult", `Age now: ${age}\nAge in 10 years: ${ageIn10}`);
 }
 
 // 3. Circumference of a Circle
@@ -35,8 +34,7 @@ function circleCircumference() {
 
   console.log("Circumference: " + circumference.toFixed(2));
 
-  document.getElementById("circleResult").innerText =
-    `Circumference: ${circumference.toFixed(2)}`;
+  setOutput("circleResult", `Circumference: ${circumference.toFixed(2)}`);
 }
 
 // 4. Celsius to Fahrenheit
@@ -46,8 +44,7 @@ function celsiusToFahrenheit() {
 
   console.log(celsius + "C = " + fahrenheit + "F");
 
-  document.getElementById("tempResult").innerText =
-    `${celsius}°C = ${fahrenheit}°F`;
+  setOutput("tempResult", `${celsius}°C = ${fahrenheit}°F`);
 }
 
 // 5. Grade Scheme
@@ -65,5 +62,12 @@ function checkGrade() {
 
   console.log("Letter Grade: " + result);
 
-  document.getElementById("gradeResult").innerText = `Letter Grade: ${result}`;
+  setOutput("gradeResult", `Letter Grade: ${result}`);
+}
+
+// Helper: writes to the on-page output box and marks it as filled
+function setOutput(id, text) {
+  let el = document.getElementById(id);
+  el.textContent = "> " + text.replaceAll("\n", "\n> ");
+  el.classList.add("filled");
 }
