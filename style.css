@@ -1,4 +1,3 @@
-/* ---------- tokens ---------- */
 :root {
   --bg: #150a19;
   --surface: #1e1024;
@@ -30,7 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------- ambient glow ---------- */
 .glow {
   position: fixed;
   border-radius: 50%;
@@ -50,7 +48,6 @@ body {
   bottom: -160px; right: -120px;
 }
 
-/* ---------- header ---------- */
 .page-header {
   max-width: 640px;
   margin: 0 auto 64px;
@@ -123,7 +120,6 @@ body {
   transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ---------- rail layout (signature element) ---------- */
 .rail {
   max-width: 640px;
   margin: 0 auto;
@@ -180,7 +176,6 @@ body {
   animation: pulse 1.8s ease-in-out infinite;
 }
 
-/* ---------- card ---------- */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -222,7 +217,6 @@ body {
   margin: 0 0 20px;
 }
 
-/* ---------- controls ---------- */
 .controls {
   display: flex;
   gap: 8px;
@@ -251,14 +245,12 @@ input:focus {
   box-shadow: 0 0 0 3px var(--glow);
 }
 
-/* Remove the ugly native number spinner (Chrome, Safari, Edge) */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Remove it in Firefox too */
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
@@ -291,7 +283,6 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* ---------- output ---------- */
 .output {
   background: #0d0510;
   border: 1px solid var(--border);
@@ -311,7 +302,6 @@ button:focus-visible {
   border-color: var(--border-hover);
 }
 
-/* ---------- footer ---------- */
 .page-footer {
   max-width: 640px;
   margin: 48px auto 0;
@@ -327,7 +317,6 @@ button:focus-visible {
   margin: 0;
 }
 
-/* ---------- animations ---------- */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -338,7 +327,6 @@ button:focus-visible {
   50%      { box-shadow: 0 0 0 6px var(--glow), 0 0 24px var(--glow); }
 }
 
-/* ---------- responsive ---------- */
 @media (max-width: 480px) {
   body { padding: 48px 16px; }
   .page-header h1 { font-size: 32px; }
@@ -347,7 +335,6 @@ button:focus-visible {
   .exercise { grid-template-columns: 18px 1fr; gap: 12px; }
 }
 
-/* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
