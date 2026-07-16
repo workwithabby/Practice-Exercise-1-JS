@@ -35,6 +35,3 @@ This individual activity was created for **Practice Exercise 1: Basic JavaScript
 - HTML
 - CSS
 - JavaScript
-
----
-*Submitted for Practice Exercise 1 — Basic JavaScript Program, Technological Institute of the Philippines – Quezon City.*
