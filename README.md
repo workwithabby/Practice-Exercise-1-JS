@@ -30,7 +30,7 @@ This individual activity was created for **Practice Exercise 1: Basic JavaScript
 | 4 | **Celsius to Fahrenheit Converter** | Celsius temperature and converts it to Fahrenheit using `(°C × 9/5) + 32`. |
 | 5 | **Grade Scheme Function** | A `gradeScheme()` function that converts a numerical grade into its corresponding letter grade (A–F). |
 
-## 🛠️ Programming Languages Used
+## 🛠️ Tech Stack
 
 - HTML
 - CSS
