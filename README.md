@@ -1,18 +1,18 @@
-# 📘 Basic JavaScript Programs
+# Basic JavaScript Programs
 
 Five beginner-level JavaScript programs demonstrating arithmetic operations, the `Date` object, mathematical formulas, unit conversion, and conditional logic using `prompt()`, `console.log()`, and `alert()`.
 
-## 👩‍💻 Submitted by
+## Submitted by
 
 **Abigail B. Dela Cruz**
 BSIT — 3rd Year, 1st Semester
 Technological Institute of the Philippines – Quezon City
 
-## 🔗 Live Demo
+## Live Demo
 
-🌐 [View Live on GitHub Pages](https://workwithabby.github.io/Basic-JavaScript-Programs/) <!-- Replace # with your actual GitHub Pages URL -->
+[View Live on GitHub Pages](https://workwithabby.github.io/Basic-JavaScript-Programs/) <!-- Replace # with your actual GitHub Pages URL -->
 
-## 📝 Description
+## Description
 
 This individual activity was created for **Practice Exercise 1: Basic JavaScript Program**. Each program:
 
@@ -20,7 +20,7 @@ This individual activity was created for **Practice Exercise 1: Basic JavaScript
 - Displays results in the browser console via `console.log()`
 - Displays the final output in a pop-up message via `alert()`
 
-## 📂 Exercises Included
+## Exercises Included
 
 | # | Exercise | Description |
 |---|----------|-------------|
@@ -30,7 +30,7 @@ This individual activity was created for **Practice Exercise 1: Basic JavaScript
 | 4 | **Celsius to Fahrenheit Converter** | Celsius temperature and converts it to Fahrenheit using `(°C × 9/5) + 32`. |
 | 5 | **Grade Scheme Function** | A `gradeScheme()` function that converts a numerical grade into its corresponding letter grade (A–F). |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML
 - CSS
